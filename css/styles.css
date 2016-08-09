@@ -1,0 +1,345 @@
+/* Global Layout Style */
+
+* { 
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #5C5C5C;
+  font-size: 1em;
+  background: #F7F7F7;
+}
+
+
+/* Link Style */
+
+a {
+  text-decoration: none;
+  color: #424243;
+  font-weight: 400;
+}
+
+a:hover {
+  color: #979999;
+}
+
+
+/* Section Style */
+
+.nav {
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  width: 90%;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  background: white;
+  margin: 5px 15px 5px 15px;
+  padding: 9px 40px 9px 40px;
+}
+
+.nav li a {
+  font-weight: 600;
+}
+
+.name {
+  margin-top: 12px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+main {
+  background: white;
+  padding: 25px 10px 30px 10px;
+}
+
+.title {
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.description-title {
+  font-weight: 600;
+}
+
+.title,
+.contact,
+.to-top {
+  text-transform: uppercase;
+}
+
+.introduction {
+  margin: 20px 15px 45px 15px;
+}
+
+.description {
+  margin-bottom: 35px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.contact {
+  margin-top: 55px;
+  margin-bottom: 35px;
+  font-weight: 600;
+}
+
+.contact-text {
+  margin-bottom: 30px;
+}
+
+.contact-link {
+  font-weight: 600;
+}
+
+.bottom-text {
+  list-style: none;
+  font-size: 0.8em;
+  margin: 10px 10px 20px 10px;
+  float: right;
+}
+
+#name-at-bottom {
+    float: left;
+    font-size: 0.8em;
+    margin: 10px 10px 20px 10px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+hr {
+  margin-top: 65px;
+  margin-bottom: 10px;
+}
+
+.wide-screen-footer-nav {
+  visibility: hidden;
+}
+
+/* Images */
+
+.profile-image {
+  width: 65%;
+  margin-top: 40px;
+  margin-bottom: 7px;
+}
+
+.portfolio-image {
+  width: 96%;
+}
+
+
+/* Media queries for larger screens */
+
+@media screen and (min-width: 768px) {
+
+.nav li {
+  width: 100%;
+  background: #F7F7F7;
+  margin: 20px;
+  padding: 20px 0;
+  display: inline;
+}
+
+.name {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.profile-image {
+  width: 40%;
+  margin: 0 0 0 20px;
+  float: right;
+}
+
+.introduction {
+  text-align: left;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.intro-section {
+  margin: 40px 10px 40px 10px;
+}
+
+.project {
+  display: inline-block;
+  width: 50%;
+  margin: -4px;
+}
+
+main {
+  padding: 0;
+}
+
+.title {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.calculator {
+  vertical-align: top;
+}
+
+.contact-text {
+  margin-left: 160px;
+  margin-right: 160px;
+}
+
+.description {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 60px;
+}
+
+.bottom-section {
+  margin-bottom: 50px;
+}
+
+.to-top {
+  visibility: hidden;
+}
+
+.wide-screen-footer-nav {
+  visibility: visible;
+}
+
+
+#name-at-bottom {
+  float: left;
+  margin-left: 25px;
+  padding: 0;
+}
+
+.bottom-text {
+  float: right;
+}
+
+.bottom-text li {
+  float: left;
+  margin: 0;
+  padding: 0 20px 20px 20px;
+  text-transform: uppercase;
+}
+
+.bottom-text li a {
+  font-weight: 600;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+body {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.nav {
+  float: right;
+}
+
+.nav li a {
+  float: left;
+}
+
+.name {
+  float: left;
+}
+
+
+.name {
+  padding: 0 20px 0 20px;
+  margin: 40px 20px 0 20px;
+}
+
+.nav li a {
+  margin: 50px 10px 0 30px;
+}
+
+.nav li {
+  margin: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.profile-image {
+  margin: 20px 30px 20px 50px;
+}
+
+.introduction {
+  margin: 20px;
+  padding: 20px 20px 20px 20px;
+}
+
+.project {
+  display: inline-block;
+  width: 32%;
+}
+
+main {
+  padding: 0;
+}
+
+.title {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.calculator,
+.photo-gallery {
+  vertical-align: top;
+}
+
+.contact-text {
+  margin-left: 260px;
+  margin-right: 260px;
+}
+
+.description {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 60px;
+}
+
+.bottom-section {
+  margin-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+
+
+
+
+}
